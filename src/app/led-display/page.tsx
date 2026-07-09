@@ -1,29 +1,15 @@
-import { PanelTop } from "lucide-react";
-
-import { ModulePlaceholder } from "@/components/shared/module-placeholder";
 import { PageHeader } from "@/components/shared/page-header";
+import { LedDisplayCalculator } from "@/features/led/components/led-display-calculator";
 
 export default function LedDisplayPage() {
   return (
     <>
       <PageHeader
-        badge="Planned module"
-        description="The LED calculator route is ready for cabinet sizing, pixel pitch, and environment-specific display workflows."
+        badge="Module 2"
+        description="Quickly size an LED display from width, height, pixel pitch, and environment, with advanced cabinet tools tucked away when needed."
         title="LED Display Calculator"
       />
-      <ModulePlaceholder
-        description="Business logic will be added in a later increment."
-        icon={PanelTop}
-        sections={[
-          "Pixel pitch inputs",
-          "Cabinet dimensions",
-          "Cabinet count",
-          "Indoor / outdoor mode",
-          "Native resolution results",
-          "Physical size results",
-        ]}
-        title="Module structure prepared"
-      />
+      <LedDisplayCalculator />
     </>
   );
 }
